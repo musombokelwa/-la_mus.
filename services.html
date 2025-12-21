@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | #la-mus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+        body {
+            background-color: #020617;
+            color: #e5e7eb;
+            line-height: 1.7;
+        }
+
+        /* CONTAINER */
+        .services-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 32px;
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .services-section p {
+            color: #cbd5f5;
+            margin-bottom: 50px;
+            font-size: 16px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-item {
+            background-color: #0f172a;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .service-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+        }
+
+        .service-icon {
+            font-size: 40px;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .service-item h3 {
+            font-size: 20px;
+            color: #e5e7eb;
+            margin-bottom: 15px;
+        }
+
+        .service-item p {
+            font-size: 15px;
+            color: #cbd5f5;
+            line-height: 1.5;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .services-section h2 { font-size: 28px; }
+            .service-item h3 { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="services-section">
+        <h2>Mes Services Informatiques</h2>
+        <p>Je propose des services adaptés aux besoins locaux et aux entreprises, alliant expertise technique et innovation.</p>
+
+        <div class="services-grid">
+            <!-- SERVICE 1 -->
+            <div class="service-item" data-service="ia">
+                <div class="service-icon"><i class="fas fa-brain"></i></div>
+                <h3>Intelligence Artificielle & Machine Learning</h3>
+                <p>Création de datasets, training sets et modèles intelligents pour analyser les données et automatiser les processus.</p>
+            </div>
+
+            <!-- SERVICE 2 -->
+            <div class="service-item" data-service="consulting">
+                <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>Solutions numériques & Consulting</h3>
+                <p>Conseil et développement de solutions technologiques pour améliorer l’efficacité et l’innovation des entreprises.</p>
+            </div>
+
+            <!-- SERVICE 3 -->
+            <div class="service-item" data-service="data">
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Collecte & traitement de données</h3>
+                <p>Analyse des données terrain, supervision, communication et photographie pour comprendre les besoins réels.</p>
+            </div>
+
+            <!-- SERVICE 4 -->
+            <div class="service-item" data-service="web">
+                <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Sites web dynamiques</h3>
+                <p>Création de sites web interactifs, adaptatifs et performants, adaptés aux besoins professionnels ou institutionnels.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Exemple : effet de click pour afficher plus d'infos
+        const services = document.querySelectorAll('.service-item');
+
+        services.forEach(item => {
+            item.addEventListener('click', () => {
+                alert("Service sélectionné : " + item.dataset.service);
+            });
+        });
+    </script>
+
+</body>
+</html>
