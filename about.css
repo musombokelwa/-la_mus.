@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #0f172a;
-    color: #e5e7eb;
+    background-color: #0a0a0a;
+    color: #fafafa;
     line-height: 1.6;
 }
 
@@ -46,8 +46,11 @@ body {
 }
 
 h2, h3 {
-    color: #38bdf8;
+    color: #ffffff;
     margin-bottom: 15px;
+    border-bottom: 1px solid #404040;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 p {
@@ -56,20 +59,8 @@ p {
 }
 
 /* Sections colors */
-.intro {
-    background-color: #020617;
-}
-
-.parcours {
-    background-color: #020617;
-}
-
-.ai {
-    background-color: #020617;
-}
-
-.vision {
-    background-color: #020617;
+.intro, .parcours, .ai, .vision {
+    background-color: #0a0a0a;
 }
 
 /* RESPONSIVE MOBILE */
