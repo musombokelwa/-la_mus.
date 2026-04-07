@@ -1,135 +1,172 @@
-
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | #la-mus</title>
+    <title>Services | #la-mus Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
     <style>
-        /* RESET & BASE */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Segoe UI", Arial, sans-serif;
-        }
-        body {
-            background-color: #020617;
-            color: #e5e7eb;
-            line-height: 1.7;
-        }
-
-        /* CONTAINER */
-        .services-section {
-            padding: 80px 20px;
+        .services-header {
             text-align: center;
+            padding: 6rem 5% 4rem;
+            max-width: 1000px;
+            margin: auto;
         }
 
-        .services-section h2 {
-            font-size: 32px;
-            color: #38bdf8;
-            margin-bottom: 15px;
+        .services-header h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            margin-bottom: 2rem;
+            font-family: 'Outfit', sans-serif;
         }
 
-        .services-section p {
-            color: #cbd5f5;
-            margin-bottom: 50px;
-            font-size: 16px;
+        .services-header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            padding: 4rem 5% 8rem;
+            max-width: 1400px;
+            margin: auto;
         }
 
-        .service-item {
-            background-color: #0f172a;
-            padding: 25px;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
+        .service-card {
+            background: var(--bg-card);
+            border-radius: 28px;
+            padding: 4rem 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+            text-align: left;
         }
 
-        .service-item:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+        .service-card:hover {
+            border-color: #fff;
+            transform: translateY(-10px);
+            background: #262626;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
         }
 
         .service-icon {
-            font-size: 40px;
-            color: #38bdf8;
-            margin-bottom: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .service-item h3 {
-            font-size: 20px;
-            color: #e5e7eb;
-            margin-bottom: 15px;
+        .service-card h3 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-family: 'Outfit', sans-serif;
         }
 
-        .service-item p {
-            font-size: 15px;
-            color: #cbd5f5;
-            line-height: 1.5;
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.7;
         }
 
-        /* RESPONSIVE */
         @media (max-width: 768px) {
-            .services-section h2 { font-size: 28px; }
-            .service-item h3 { font-size: 18px; }
+            .services-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .service-card {
+                padding: 3rem 2rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <section class="services-section">
-        <h2>Mes Services Informatiques</h2>
-        <p>Je propose des services adaptés aux besoins locaux et aux entreprises, alliant expertise technique et innovation.</p>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="JHCL9368.JPG" alt="#la-mus"> <span>#la-mus</span>
+            </div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                </ul>
+            </nav>
+            <div class="burger" id="burger"><span></span><span></span><span></span></div>
+        </div>
+    </header>
 
-        <div class="services-grid">
+    <main>
+        <section class="services-header">
+            <h1>Des Solutions IA <br>pour le Futur du Congo</h1>
+            <p>Mon approche combine expertise technique et compréhension profonde des enjeux locaux pour fournir des
+                outils numériques de premier plan.</p>
+        </section>
+
+        <section class="services-grid">
             <!-- SERVICE 1 -->
-            <div class="service-item" data-service="ia">
+            <div class="service-card">
                 <div class="service-icon"><i class="fas fa-brain"></i></div>
-                <h3>Intelligence Artificielle & Machine Learning</h3>
-                <p>Création de datasets, training sets et modèles intelligents pour analyser les données et automatiser les processus.</p>
+                <h3>Intelligence Artificielle</h3>
+                <p>Développement de modèles de Machine Learning spécialisés, vision par ordinateur et automatisation de
+                    processus complexes pour optimiser vos opérations.</p>
             </div>
 
             <!-- SERVICE 2 -->
-            <div class="service-item" data-service="consulting">
+            <div class="service-card">
                 <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
-                <h3>Solutions numériques & Consulting</h3>
-                <p>Conseil et développement de solutions technologiques pour améliorer l’efficacité et l’innovation des entreprises.</p>
+                <h3>Consulting Numérique</h3>
+                <p>Audit technologique et stratégie d'innovation pour guider votre institution vers une transition
+                    numérique fluide et performante.</p>
             </div>
 
             <!-- SERVICE 3 -->
-            <div class="service-item" data-service="data">
+            <div class="service-card">
                 <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                <h3>Collecte & traitement de données</h3>
-                <p>Analyse des données terrain, supervision, communication et photographie pour comprendre les besoins réels.</p>
+                <h3>Analyse de Données</h3>
+                <p>Exploitation et visualisation de vos données terrain pour extraire des connaissances exploitables et
+                    soutenir une prise de décision stratégique.</p>
             </div>
 
             <!-- SERVICE 4 -->
-            <div class="service-item" data-service="web">
+            <div class="service-card">
                 <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-                <h3>Sites web dynamiques</h3>
-                <p>Création de sites web interactifs, adaptatifs et performants, adaptés aux besoins professionnels ou institutionnels.</p>
+                <h3>Web Haute Performance</h3>
+                <p>Conception et développement de sites web interactifs et évolutifs, garantissant une présence digitale
+                    moderne et sécurisée.</p>
             </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/+243846066283" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:musjosue809@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
-    </section>
+        <p>&copy; 2025 #la-mus | Excellence & Innovation IA.</p>
+    </footer>
 
     <script>
-        // Exemple : effet de click pour afficher plus d'infos
-        const services = document.querySelectorAll('.service-item');
-
-        services.forEach(item => {
-            item.addEventListener('click', () => {
-                alert("Service sélectionné : " + item.dataset.service);
-            });
-        });
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+        burger.addEventListener('click', () => { navLinks.classList.toggle('show'); burger.classList.toggle('active'); });
     </script>
-
+    <script src="chatbot.js"></script>
 </body>
+
 </html>
