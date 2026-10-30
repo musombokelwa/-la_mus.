@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#06060f">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:;">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Contact | #la-mus</title>
+    <meta name="description" content="Contactez #la-mus pour un projet IA, un site web, un conseil numérique ou une collaboration.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="home.html" aria-label="Accueil #la-mus">
+                <img src="JHCL9368.JPG" alt="#la-mus">
+                <span>#la-mus</span>
+            </a>
+
+            <nav class="nav" aria-label="Navigation principale">
+                <ul id="nav-links">
+                    <li><a href="home.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a class="nav-cta" href="home.html#contact">Démarrer un projet</a>
+
+            <div class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="section-shell">
+        <section class="page-intro">
+            <span class="eyebrow">Contact</span>
+            <h1>Discutons de votre projet.</h1>
+            <p>
+                Vous avez une idée, un besoin, une problématique ou un projet à lancer ? Partagez votre contexte ici et je vous répondrai avec une proposition claire et utile.
+            </p>
+        </section>
+
+        <section class="contact-wrap" aria-label="Formulaire de contact">
+            <div class="contact-form-panel">
+                <form id="contactForm" novalidate>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="nom">Nom complet</label>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="objet">Objet</label>
+                            <input type="text" id="objet" name="objet" placeholder="Ex : Site web, projet IA, conseil..." required>
+                        </div>
+
+                        <div class="form-field full">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Décrivez votre besoin, le contexte et le résultat attendu..." required></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="btn btn-primary submit-btn">Envoyer le message</button>
+                    <div class="success-message" id="successMsg">Votre message a bien été préparé. Vous pouvez maintenant l’envoyer par email.</div>
+                    <div class="error-message" id="errorMsg"></div>
+                </form>
+            </div>
+
+            <aside class="contact-info-panel">
+                <h3>Informations</h3>
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <span>musjosue809@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <span>+243 846 066 283</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <strong>Localisation</strong>
+                            <span>Lubumbashi, République Démocratique du Congo</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <div class="section-shell footer-inner">
+            <div class="social-icons" aria-label="Réseaux sociaux">
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/+243846066283" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:musjosue809@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 #la-mus | Excellence & Innovation IA.</p>
+        </div>
+    </footer>
+
+    <script src="chatbot.js"></script>
+    <script>
+        const burger = document.getElementById('burger');
+        const navLinks = document.getElementById('nav-links');
+
+        if (burger && navLinks) {
+            burger.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('show');
+                burger.setAttribute('aria-expanded', String(isOpen));
+            });
+        }
+
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            const successMsg = document.getElementById('successMsg');
+            const errorMsg = document.getElementById('errorMsg');
+            const submitBtn = document.getElementById('submitBtn');
+
+            contactForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const nom = document.getElementById('nom').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const objet = document.getElementById('objet').value.trim();
+                const message = document.getElementById('message').value.trim();
+
+                if (!nom || !email || !objet || !message) {
+                    errorMsg.textContent = 'Merci de remplir tous les champs avant d’envoyer votre message.';
+                    errorMsg.style.display = 'block';
+                    successMsg.style.display = 'none';
+                    return;
+                }
+
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    errorMsg.textContent = 'L’adresse email saisie n’est pas valide.';
+                    errorMsg.style.display = 'block';
+                    successMsg.style.display = 'none';
+                    return;
+                }
+
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Envoi...';
+                errorMsg.style.display = 'none';
+
+                const subject = encodeURIComponent(`[Projet] ${objet}`);
+                const body = encodeURIComponent(`Nom: ${nom}\nEmail: ${email}\nObjet: ${objet}\n\nMessage:\n${message}`);
+
+                window.location.href = `mailto:musjosue809@gmail.com?subject=${subject}&body=${body}`;
+
+                successMsg.style.display = 'block';
+                contactForm.reset();
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Envoyer le message';
+            });
+        }
+    </script>
+</body>
+
+</html>

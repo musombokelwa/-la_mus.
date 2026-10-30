@@ -4,30 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#la-mus | Portfolio IA & Innovation</title>
-    <meta name="description"
-        content="Portfolio professionnel de #la-mus, spécialisé en Intelligence Artificielle et Innovation technologique au Congo.">
+    <meta name="theme-color" content="#06060f">
+    <title>#la-mus | Portfolio IA · Data · Innovation 2026</title>
+    <meta name="description" content="Portfolio professionnel de #la-mus — Expert IA, bases de données vectorielles, développement web et innovation numérique en RDC. Lubumbashi 2026.">
+    <meta name="author" content="Josué Musombokelwa — #la-mus">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="home.css">
-    <!-- Supabase JS SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase /supabase-js@2"></script>
 </head>
 
 <body>
 
-    <header>
+    <!-- ═══════════════ HEADER ═══════════════ -->
+    <header class="site-header">
         <div class="container">
-            <div class="logo">
-                <img src="JHCL9368.JPG" alt="#la-mus"> <span>#la-mus</span>
-            </div>
-            <nav>
+            <a class="logo" href="home.html" aria-label="Accueil #la-mus">
+                <img src="JHCL9368.JPG" alt="#la-mus">
+                <span>#la-mus</span>
+            </a>
+
+            <nav class="nav" aria-label="Navigation principale">
                 <ul id="nav-links">
-                    <li><a href="home.html">Accueil</a></li>
+                    <li><a class="active" href="home.html">Accueil</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <div class="burger" id="burger">
+
+            <a class="nav-cta" href="contact.html">Travailler avec moi</a>
+
+            <div class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -35,176 +41,361 @@
         </div>
     </header>
 
+    <!-- ═══════════════ MAIN ═══════════════ -->
     <main>
-        <!-- HERO SECTION -->
-        <section class="presentation">
-            <div class="text">
-                <strong>Ingénierie IA <br> Innovation Technologique</strong>
+
+        <!-- HERO -->
+        <section class="hero section-shell">
+            <div class="hero-copy">
+                <span class="eyebrow">Ingénierie IA · Data · Innovation 2026</span>
+                <h1 class="hero-title">Je transforme les <span class="gradient">données</span> en solutions numériques intelligentes.</h1>
                 <p>
-                    L'intelligence artificielle transforme notre façon de vivre.
-                    #la-mus est à la pointe de cette révolution, offrant des solutions innovantes
-                    pour exploiter la puissance des données et des algorithmes.
+                    L'intelligence artificielle et la data ne doivent pas rester théoriques. Je conçois des systèmes intelligents, des pipelines de données, des bases de données vectorielles et des architectures RAG qui répondent aux besoins réels — avec un vrai impact sur le terrain.
                 </p>
-                <a href="cv.pdf" download class="download-btn">
-                    <i class="fas fa-file-download"></i> Télécharger mon CV
-                </a>
-            </div>
-            <div class="images">
-                <img src="JHCL9368.JPG" alt="Portrait #la-mus">
-            </div>
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section class="nos-projets">
-            <div class="project-card">
-                <div class="image">
-                    <img src="ai.jpg" alt="Projet Vision Artificielle">
-                </div>
-                <div class="text">
-                    <h2>Vision par Ordinateur (CNN)</h2>
-                    <p>
-                        Développement de solutions de détection d'objets et de classification d'images utilisant
-                        des réseaux de neurones convolutifs (CNN) pour l'analyse visuelle automatisée.
-                    </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-rocket"></i> Démarrer un projet</a>
+                    <a href="cv.pdf" class="btn btn-secondary" download><i class="fas fa-download"></i> Télécharger le CV</a>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="image">
-                    <img src="deeplerning.png" alt="Projet Deep Learning">
-                </div>
-                <div class="text">
-                    <h2>Deep Learning & Prédiction</h2>
-                    <p>
-                        Conception de modèles prédictifs capables d'analyser des motifs complexes et de prédire
-                        des tendances à partir de données massives (Big Data).
-                    </p>
+            <div class="hero-visual">
+                <div class="hero-image-wrap">
+                    <img src="JHCL9368.JPG" alt="Portrait de #la-mus — Josué Musombokelwa">
+                    <div class="hero-badge">
+                        <strong>+3</strong>
+                        <span>ans d'expérience</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- CONTACT SECTION -->
-        <section class="contact-section" id="contact">
-            <div class="contact-container">
-                <h2>Commençons Votre Projet</h2>
-                <p>communique nous votre besoin et nous vous repondrons dans les plus bref delais</p>
+        <!-- STATISTIQUES -->
+        <section class="section-shell" aria-label="Statistiques clés">
+            <div class="stats">
+                <div class="stat-card">
+                    <strong>AI</strong>
+                    <span>Solutions intelligentes</span>
+                </div>
+                <div class="stat-card">
+                    <strong>ML</strong>
+                    <span>Modèles & prédictions</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Data</strong>
+                    <span>BD vectorielles & RAG</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Web</strong>
+                    <span>Expérience premium</span>
+                </div>
+            </div>
+        </section>
 
-                <div class="success-message" id="successMsg">
-                    <i class="fas fa-message"></i>
+        <!-- COMPÉTENCES -->
+        <section class="section-shell skills-section" aria-labelledby="skills-title">
+            <div class="section-header">
+                <span>Compétences 2026</span>
+                <h2 id="skills-title">Un socle technique complet et à jour.</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-layer-group"></i> Frontend</h3>
+                    <div class="skill-pills">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Responsive Design</span>
+                        <span>UI/UX</span>
+                    </div>
                 </div>
 
-                <form id="contactForm" class="contact-form">
-                    <div class="form-group">
-                        <label for="nom">Nom complet</label>
-                        <input type="text" id="nom" name="nom" placeholder="entre votre nom" required>
+                <!-- Backend -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-server"></i> Backend & Logique</h3>
+                    <div class="skill-pills">
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>FastAPI</span>
+                        <span>API REST</span>
+                        <span>Automatisation</span>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="entre votre email" required>
+                <!-- Bases de données -->
+                <div class="skill-group skill-group--highlight">
+                    <h3><i class="fas fa-database"></i> Bases de données</h3>
+                    <div class="skill-pills">
+                        <span class="pill--accent">BD Vectorielles</span>
+                        <span class="pill--accent">Pinecone</span>
+                        <span class="pill--accent">Qdrant</span>
+                        <span class="pill--accent">ChromaDB</span>
+                        <span class="pill--accent">Embeddings sémantiques</span>
+                        <span>PostgreSQL</span>
+                        <span>MySQL</span>
+                        <span>SQL</span>
+                        <span>Supabase</span>
+                        <span>Modélisation BD</span>
+                        <span>MongoDB</span>
+                        <span>NoSQL</span>
+                        <span>Redis</span>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="objet">Objet</label>
-                        <input type="text" id="objet" name="objet" placeholder="Collaboration IA" required>
+                <!-- IA & Outils -->
+                <div class="skill-group">
+                    <h3><i class="fas fa-brain"></i> IA & Outils</h3>
+                    <div class="skill-pills">
+                        <span>Machine Learning</span>
+                        <span>Deep Learning</span>
+                        <span>Vision par ordinateur</span>
+                        <span>LLM & RAG</span>
+                        <span>LangChain</span>
+                        <span>TensorFlow</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Détaillez votre besoin..."
-                            required></textarea>
+        <!-- PROJETS -->
+        <section class="section-shell" aria-labelledby="projects-title">
+            <div class="section-header">
+                <span>Projets</span>
+                <h2 id="projects-title">Des solutions pensées pour des résultats concrets.</h2>
+            </div>
+
+            <div class="project-list">
+
+                <!-- Projet 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="ai.jpg" alt="Projet vision par ordinateur — #la-mus">
                     </div>
+                    <div class="project-copy">
+                        <h3>Vision par ordinateur</h3>
+                        <p>
+                            Développement de systèmes de détection d'objets et de classification d'images basés sur des CNN. Ces solutions automatisent l'analyse visuelle dans des contextes réels : agriculture, sécurité, santé.
+                        </p>
+                        <div class="project-meta"><i class="fas fa-eye"></i> CNN · PyTorch · Analyse visuelle</div>
+                    </div>
+                </article>
 
-                    <button type="submit" id="submitBtn">Envoyer le Message</button>
-                    <p id="errorMsg" style="color: #ef4444; margin-top: 10px; display: none; font-size: 14px;"></p>
-                </form>
+                <!-- Projet 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="deeplerning.png" alt="Projet Deep Learning et modèles prédictifs — #la-mus">
+                    </div>
+                    <div class="project-copy">
+                        <h3>Deep Learning & Prédiction</h3>
+                        <p>
+                            Modèles prédictifs capables d'exploiter des données complexes pour révéler des tendances, améliorer la prise de décision et optimiser les opérations dans les entreprises et institutions.
+                        </p>
+                        <div class="project-meta"><i class="fas fa-chart-line"></i> TensorFlow · Data · Prédiction</div>
+                    </div>
+                </article>
+
+                <!-- Projet 3 : NOUVEAU 2026 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="courvertir.jpg" alt="Projet Bases de données vectorielles et RAG — #la-mus">
+                    </div>
+                    <div class="project-copy">
+                        <h3>Bases de données vectorielles & RAG</h3>
+                        <p>
+                            Conception et déploiement de systèmes de recherche sémantique basés sur des bases de données vectorielles (Pinecone, Qdrant, ChromaDB). Intégration de pipelines RAG (Retrieval-Augmented Generation) pour des assistants IA contextuels, précis et efficaces.
+                        </p>
+                        <div class="project-meta"><i class="fas fa-database"></i> Vectoriel · RAG · LLM · LangChain</div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section section-shell" id="contact" aria-labelledby="contact-title">
+            <div class="section-header">
+                <span>Contact</span>
+                <h2 id="contact-title">Commençons votre prochain projet.</h2>
+            </div>
+
+            <div class="contact-wrap">
+                <div class="contact-form-panel">
+                    <form id="contactForm" novalidate>
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="nom">Nom complet</label>
+                                <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required autocomplete="name">
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Votre adresse email" required autocomplete="email">
+                            </div>
+
+                            <div class="form-field full">
+                                <label for="objet">Objet</label>
+                                <input type="text" id="objet" name="objet" placeholder="Ex : Projet IA, BD vectorielle, site web, conseil..." required>
+                            </div>
+
+                            <div class="form-field full">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Décrivez votre besoin, votre contexte et l'objectif de votre projet..." required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                        <div class="success-message" id="successMsg">
+                            <i class="fas fa-check-circle"></i> Votre message a bien été préparé. Cliquez sur « Envoyer » dans votre client email.
+                        </div>
+                        <div class="error-message" id="errorMsg"></div>
+                    </form>
+                </div>
+
+                <aside class="contact-info-panel">
+                    <h3>Contact direct</h3>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>musjosue809@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span>+243 846 066 283</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <strong>Localisation</strong>
+                                <span>Lubumbashi, RDC</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Disponibilité</strong>
+                                <span>Lun – Sam · 8h – 20h (CAT)</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </section>
 
     </main>
 
+    <!-- ═══════════════ FOOTER ═══════════════ -->
     <footer>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com" target="_blank" class="github"><i class="fab fa-github"></i></a>
-            <a href="https://wa.me/+243846066283" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:musjosue809@gmail.com" class="gmail"><i class="fas fa-envelope"></i></a>
+        <div class="section-shell footer-inner">
+            <div class="social-icons" aria-label="Réseaux sociaux">
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank" rel="noreferrer noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/+243846066283" target="_blank" rel="noreferrer noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:musjosue809@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 #la-mus &mdash; Excellence &amp; Innovation IA · Data · RDC</p>
         </div>
-        <p>&copy; 2025 #la-mus | Excellence & Innovation IA.</p>
     </footer>
 
-    <!-- CHATBOT -->
+    <!-- ═══════════════ SCRIPTS ═══════════════ -->
     <script src="chatbot.js"></script>
-
     <script>
-        // CONFIGURATION SUPABASE (À remplir par l'utilisateur)
-        const SUPABASE_URL = 'VOTRE_URL_SUPABASE'; // Ex: https://xxx.supabase.co
-        const SUPABASE_KEY = 'VOTRE_CLE_ANON_SUPABASE';
-
-        let supabaseClient = null;
-        if (SUPABASE_URL !== 'VOTRE_URL_SUPABASE') {
-            supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-        }
-
-        // BURGER MENU
+        // Menu burger
         const burger = document.getElementById('burger');
         const navLinks = document.getElementById('nav-links');
 
-        burger.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
-            burger.classList.toggle('active');
-        });
+        if (burger && navLinks) {
+            burger.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('show');
+                burger.setAttribute('aria-expanded', String(isOpen));
+                burger.classList.toggle('active');
+            });
 
-        // CONTACT FORM LOGIC (SUPABASE)
-        const form = document.getElementById('contactForm');
-        if (form) {
+            // Fermer le menu au clic sur un lien
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('show');
+                    burger.setAttribute('aria-expanded', 'false');
+                    burger.classList.remove('active');
+                });
+            });
+        }
+
+        // Formulaire de contact
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
             const successMsg = document.getElementById('successMsg');
             const errorMsg = document.getElementById('errorMsg');
             const submitBtn = document.getElementById('submitBtn');
 
-            form.addEventListener('submit', async function (e) {
-                e.preventDefault();
+            contactForm.addEventListener('submit', function (event) {
+                event.preventDefault();
 
-                const formData = {
-                    nom: document.getElementById('nom').value,
-                    email: document.getElementById('email').value,
-                    objet: document.getElementById('objet').value,
-                    message: document.getElementById('message').value,
-                    created_at: new Date()
-                };
+                const nom = document.getElementById('nom').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const objet = document.getElementById('objet').value.trim();
+                const message = document.getElementById('message').value.trim();
 
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Envoi en cours...';
                 errorMsg.style.display = 'none';
+                successMsg.style.display = 'none';
 
-                if (!supabaseClient) {
-                    console.warn('Supabase non configuré. Simulation de l\'envoi...');
-                    setTimeout(() => {
-                        successMsg.style.display = 'block';
-                        form.reset();
-                        submitBtn.disabled = false;
-                        submitBtn.textContent = 'Envoyer le Message';
-                    }, 1500);
+                if (!nom || !email || !objet || !message) {
+                    errorMsg.textContent = 'Merci de remplir tous les champs avant d\'envoyer.';
+                    errorMsg.style.display = 'block';
                     return;
                 }
 
-                try {
-                    const { data, error } = await supabaseClient
-                        .from('contacts')
-                        .insert([formData]);
-
-                    if (error) throw error;
-
-                    successMsg.style.display = 'block';
-                    form.reset();
-                } catch (err) {
-                    errorMsg.textContent = "Erreur: " + err.message;
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    errorMsg.textContent = 'L\'adresse email saisie n\'est pas valide.';
                     errorMsg.style.display = 'block';
-                } finally {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Envoyer le Message';
+                    return;
                 }
+
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Préparation...';
+
+                const subject = encodeURIComponent(`[Projet] ${objet}`);
+                const body = encodeURIComponent(
+                    `Nom: ${nom}\nEmail: ${email}\nObjet: ${objet}\n\nMessage:\n${message}`
+                );
+
+                window.location.href = `mailto:musjosue809@gmail.com?subject=${subject}&body=${body}`;
+
+                setTimeout(() => {
+                    successMsg.style.display = 'block';
+                    contactForm.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Envoyer le message';
+                }, 800);
             });
+        }
+
+        // Animation au scroll (Intersection Observer)
+        const observeEls = document.querySelectorAll('.skill-group, .project-card, .stat-card, .service-card');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            observeEls.forEach(el => observer.observe(el));
+        } else {
+            observeEls.forEach(el => el.classList.add('visible'));
         }
     </script>
 

@@ -4,160 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos | #la-mus Portfolio</title>
+    <meta name="theme-color" content="#06060f">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:;">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>À propos | #la-mus</title>
+    <meta name="description" content="À propos de #la-mus, sa vision, son parcours et son approche de l’IA et de l’innovation technologique.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="home.css">
-    <style>
-        .about-grid {
-            display: grid;
-            gap: 6rem;
-            padding: 4rem 5%;
-            max-width: 1400px;
-            margin: auto;
-        }
-
-        .about-row {
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-        }
-
-        .about-row.reverse {
-            flex-direction: row-reverse;
-        }
-
-        .about-text {
-            flex: 1.2;
-        }
-
-        .about-text h2,
-        .about-text h3 {
-            color: var(--primary);
-            margin-bottom: 2rem;
-            font-family: 'Outfit', sans-serif;
-            font-size: 2.5rem;
-        }
-
-        .about-img {
-            flex: 0.8;
-        }
-
-        .about-img img {
-            width: 100%;
-            border-radius: 24px;
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .vision-centered {
-            text-align: center;
-            max-width: 800px;
-            margin: 6rem auto;
-        }
-
-        .vision-centered h3 {
-            font-size: 3rem;
-            color: #fff;
-            margin-bottom: 2rem;
-        }
-
-        @media (max-width: 968px) {
-            .about-row {
-                flex-direction: column !important;
-                text-align: center;
-            }
-
-            .about-img img {
-                width: 80%;
-            }
-        }
-    </style>
 </head>
 
 <body>
-
-    <header>
+    <header class="site-header">
         <div class="container">
-            <div class="logo">
-                <img src="JHCL9368.JPG" alt="#la-mus"> <span>#la-mus</span>
-            </div>
-            <nav>
+            <a class="logo" href="home.html" aria-label="Accueil #la-mus">
+                <img src="JHCL9368.JPG" alt="#la-mus">
+                <span>#la-mus</span>
+            </a>
+
+            <nav class="nav" aria-label="Navigation principale">
                 <ul id="nav-links">
                     <li><a href="home.html">Accueil</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">À propos</a></li>
+                    <li><a class="active" href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <div class="burger" id="burger"><span></span><span></span><span></span></div>
+
+            <a class="nav-cta" href="contact.html">Travailler avec moi</a>
+
+            <div class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
-    <main>
-        <div class="about-grid">
-            <!-- SECTION 1 -->
+    <main class="section-shell">
+        <section class="page-intro">
+            <span class="eyebrow">À propos</span>
+            <h1>Une vision technique ancrée dans les réalités locales.</h1>
+            <p>
+                Je suis un étudiant en Génie Informatique spécialisé en Intelligence Artificielle et Innovation, avec une forte volonté de faire de la technologie un moteur de transformation concrète dans notre environnement.
+            </p>
+        </section>
+
+        <section class="about-grid">
             <div class="about-row">
-                <div class="about-text">
+                <div class="about-copy">
                     <h2>Qui suis-je ?</h2>
                     <p>
-                        Je suis étudiant en Bac 2 Génie Informatique, avec une spécialisation en Intelligence
-                        Artificielle et Innovation
-                        à l’Université de Lubumbashi. J'allie une solide base théorique avec une riche expérience
-                        terrain pour proposer
-                        des solutions numériques concrètes.
+                        Je suis actuellement étudiant en Bac 3 en Génie Informatique à l’Université de Lubumbashi, avec une spécialisation en IA, bases de données et innovation. Mon approche allie la rigueur académique et l’expérience terrain pour concevoir des solutions utiles, efficaces et adaptées au contexte africain.
                     </p>
-                    <p>Mon parcours est porté par une ambition : transformer le potentiel technologique du Congo en
-                        réalités utiles pour tous.</p>
-                </div>
-                <div class="about-img">
-                    <img src="professionnel.JPG" alt="Portrait professionnel">
-                </div>
-            </div>
-
-            <!-- SECTION 2 -->
-            <div class="about-row reverse">
-                <div class="about-text">
-                    <h3>Expérience Terrain</h3>
                     <p>
-                        Avant de me consacrer pleinement à l'ingénierie, j’ai opéré au sein de TEDO SARL et ACNDC à
-                        l'Est du pays.
-                        Superviseur terrain, photographe et responsable communication, j'ai parcouru les défis
-                        logistiques et humains
-                        de notre grand territoire.
+                        En 2026, j’ai élargi mon expertise aux <strong>bases de données vectorielles</strong> (Pinecone, Qdrant, ChromaDB), aux bases relationnelles avancées (PostgreSQL, MySQL) et aux bases non-relationnelles (MongoDB, Redis). Cette maîtrise complète me permet de concevoir des architectures IA robustes et des systèmes RAG performants.
                     </p>
-                    <p>Ces années m'ont appris que la technologie la plus puissante est celle qui s'adapte aux besoins
-                        réels des gens.</p>
+                    <p>
+                        Mon objectif est simple : transformer le potentiel technologique du Congo en solutions concrètes, accessibles et durables pour les institutions, les entrepreneurs et les citoyens.
+                    </p>
                 </div>
-                <div class="about-img">
-                    <img src="terrain.JPG" alt="Expérience terrain">
+                <div class="about-card">
+                    <img src="professionnel.JPG" alt="Portrait professionnel de #la-mus">
                 </div>
             </div>
-        </div>
 
-        <section class="vision-centered">
-            <h3>Ma Vision</h3>
-            <p>Le futur du Congo est numérique. Je m'engage à bâtir des ponts entre l'IA de pointe et les secteurs clés
-                comme l'éducation,
-                l'énergie durable et l'agriculture de précision. Chaque ligne de code est un pas vers l'autonomie et
-                l'innovation locale.</p>
+            <div class="about-row reverse">
+                <div class="about-copy">
+                    <h3>Expérience terrain</h3>
+                    <p>
+                        Avant de me consacrer pleinement à l’ingénierie logicielle et à l’IA, j’ai évolué dans des environnements exigeants avec TEDO SARL et ACNDC, en tant que superviseur terrain, photographe et acteur de la communication. Ces expériences m’ont appris à comprendre les besoins réels, l’organisation des équipes et l’importance d’une technologie qui aide vraiment les gens.
+                    </p>
+                    <p>
+                        C’est précisément cette vision pratique qui guide aujourd’hui mon travail : la technologie la plus puissante est celle qui s’adapte aux besoins concrets des utilisateurs.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <img src="terrain.JPG" alt="Expérience terrain de #la-mus">
+                </div>
+            </div>
+        </section>
+
+        <section class="page-intro" aria-label="Vision">
+            <span class="eyebrow">Vision</span>
+            <h2>Le futur du Congo est numérique.</h2>
+            <p>
+                Je m’engage à créer des ponts entre l’IA de pointe et les secteurs clés comme l’éducation, l’énergie durable, l’agriculture, les services publics et les entreprises. Chaque ligne de code est une opportunité d’accélérer l’innovation locale, d’ouvrir des perspectives et de bâtir une autonomie numérique réelle.
+            </p>
         </section>
     </main>
 
     <footer>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://wa.me/+243846066283" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:musjosue809@gmail.com"><i class="fas fa-envelope"></i></a>
+        <div class="section-shell footer-inner">
+            <div class="social-icons" aria-label="Réseaux sociaux">
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/+243846066283" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:musjosue809@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 #la-mus | Excellence & Innovation IA.</p>
         </div>
-        <p>&copy; 2025 #la-mus | Excellence & Innovation IA.</p>
     </footer>
 
+    <script src="chatbot.js"></script>
     <script>
         const burger = document.getElementById('burger');
         const navLinks = document.getElementById('nav-links');
-        burger.addEventListener('click', () => { navLinks.classList.toggle('show'); burger.classList.toggle('active'); });
+
+        if (burger && navLinks) {
+            burger.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('show');
+                burger.setAttribute('aria-expanded', String(isOpen));
+                burger.classList.toggle('active');
+            });
+        }
     </script>
-    <script src="chatbot.js"></script>
 </body>
 
 </html>

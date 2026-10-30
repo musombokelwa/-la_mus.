@@ -4,169 +4,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | #la-mus Portfolio</title>
+    <meta name="theme-color" content="#06060f">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:;">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Services | #la-mus</title>
+    <meta name="description" content="Services IA, conseil numérique, analyse de données et développement web proposés par #la-mus.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="home.css">
-    <style>
-        .services-header {
-            text-align: center;
-            padding: 6rem 5% 4rem;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .services-header h1 {
-            font-size: 3.5rem;
-            color: #fff;
-            margin-bottom: 2rem;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        .services-header p {
-            color: var(--text-muted);
-            font-size: 1.2rem;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 3rem;
-            padding: 4rem 5% 8rem;
-            max-width: 1400px;
-            margin: auto;
-        }
-
-        .service-card {
-            background: var(--bg-card);
-            border-radius: 28px;
-            padding: 4rem 3rem;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: var(--transition);
-            text-align: left;
-        }
-
-        .service-card:hover {
-            border-color: #fff;
-            transform: translateY(-10px);
-            background: #262626;
-            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
-        }
-
-        .service-icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            color: #fff;
-            margin-bottom: 2.5rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .service-card h3 {
-            font-size: 1.8rem;
-            color: #fff;
-            margin-bottom: 1.5rem;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        .service-card p {
-            color: var(--text-muted);
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-
-        @media (max-width: 768px) {
-            .services-header h1 {
-                font-size: 2.5rem;
-            }
-
-            .service-card {
-                padding: 3rem 2rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
-
-    <header>
+    <header class="site-header">
         <div class="container">
-            <div class="logo">
-                <img src="JHCL9368.JPG" alt="#la-mus"> <span>#la-mus</span>
-            </div>
-            <nav>
+            <a class="logo" href="home.html" aria-label="Accueil #la-mus">
+                <img src="JHCL9368.JPG" alt="#la-mus">
+                <span>#la-mus</span>
+            </a>
+
+            <nav class="nav" aria-label="Navigation principale">
                 <ul id="nav-links">
                     <li><a href="home.html">Accueil</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a class="active" href="services.html">Services</a></li>
                     <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <div class="burger" id="burger"><span></span><span></span><span></span></div>
+
+            <a class="nav-cta" href="contact.html">Travailler avec moi</a>
+
+            <div class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="services-header">
-            <h1>Des Solutions IA <br>pour le Futur du Congo</h1>
-            <p>Mon approche combine expertise technique et compréhension profonde des enjeux locaux pour fournir des
-                outils numériques de premier plan.</p>
+    <main class="section-shell">
+        <section class="page-intro">
+            <span class="eyebrow">Services</span>
+            <h1>Des solutions IA pensées pour le futur.</h1>
+            <p>
+                J’accompagne les entreprises, projets et institutions dans leur transition numérique avec des solutions technologiques adaptées à leur contexte, leur croissance et leurs besoins de performance.
+            </p>
         </section>
 
-        <section class="services-grid">
-            <!-- SERVICE 1 -->
-            <div class="service-card">
+        <section class="service-grid" aria-label="Nos services">
+            <article class="service-card">
                 <div class="service-icon"><i class="fas fa-brain"></i></div>
                 <h3>Intelligence Artificielle</h3>
-                <p>Développement de modèles de Machine Learning spécialisés, vision par ordinateur et automatisation de
-                    processus complexes pour optimiser vos opérations.</p>
-            </div>
+                <p>
+                    Développement de modèles d’apprentissage automatique, de systèmes de vision par ordinateur et d’automatisations intelligentes pour transformer des processus complexes en solutions fiables et efficientes.
+                </p>
+            </article>
 
-            <!-- SERVICE 2 -->
-            <div class="service-card">
+            <article class="service-card">
                 <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
-                <h3>Consulting Numérique</h3>
-                <p>Audit technologique et stratégie d'innovation pour guider votre institution vers une transition
-                    numérique fluide et performante.</p>
-            </div>
+                <h3>Conseil numérique</h3>
+                <p>
+                    Audit technologique, stratégie d’innovation et accompagnement à la transformation digitale pour aider les organisations à faire les bons choix techniques et structuraux.
+                </p>
+            </article>
 
-            <!-- SERVICE 3 -->
-            <div class="service-card">
+            <article class="service-card">
                 <div class="service-icon"><i class="fas fa-chart-line"></i></div>
-                <h3>Analyse de Données</h3>
-                <p>Exploitation et visualisation de vos données terrain pour extraire des connaissances exploitables et
-                    soutenir une prise de décision stratégique.</p>
-            </div>
+                <h3>Analyse de données</h3>
+                <p>
+                    Collecte, traitement et visualisation des données pour extraire des informations utiles, identifier les tendances et orienter la prise de décision stratégique.
+                </p>
+            </article>
 
-            <!-- SERVICE 4 -->
-            <div class="service-card">
+            <article class="service-card">
                 <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-                <h3>Web Haute Performance</h3>
-                <p>Conception et développement de sites web interactifs et évolutifs, garantissant une présence digitale
-                    moderne et sécurisée.</p>
-            </div>
+                <h3>Web & solutions digitales</h3>
+                <p>
+                    Conception et développement de sites web modernes, performants et parfaitement adaptés à la présence numérique de votre marque ou de votre organisation.
+                </p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-icon"><i class="fas fa-database"></i></div>
+                <h3>Bases de données vectorielles</h3>
+                <p>
+                    Conception et déploiement de bases de données vectorielles (Pinecone, Qdrant, ChromaDB), relationnelles (PostgreSQL, MySQL) et non-relationnelles (MongoDB). Intégration de pipelines RAG et de recherche sémantique pour des systèmes IA intelligents et contextue ls.
+                </p>
+            </article>
         </section>
     </main>
 
     <footer>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://wa.me/+243846066283" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:musjosue809@gmail.com"><i class="fas fa-envelope"></i></a>
+        <div class="section-shell footer-inner">
+            <div class="social-icons" aria-label="Réseaux sociaux">
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/+243846066283" target="_blank" rel="noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:musjosue809@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 #la-mus | Excellence & Innovation IA.</p>
         </div>
-        <p>&copy; 2025 #la-mus | Excellence & Innovation IA.</p>
     </footer>
 
+    <script src="chatbot.js"></script>
     <script>
         const burger = document.getElementById('burger');
         const navLinks = document.getElementById('nav-links');
-        burger.addEventListener('click', () => { navLinks.classList.toggle('show'); burger.classList.toggle('active'); });
+
+        if (burger && navLinks) {
+            burger.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('show');
+                burger.setAttribute('aria-expanded', String(isOpen));
+                burger.classList.toggle('active');
+            });
+        }
     </script>
-    <script src="chatbot.js"></script>
 </body>
 
 </html>
