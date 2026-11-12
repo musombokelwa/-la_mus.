@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://musombokelwa.github.io/-la_mus./sitemap.xml
