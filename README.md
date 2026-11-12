@@ -2,7 +2,7 @@
 
 Portfolio professionnel de **Josué Musombokelwa (#la-mus)**, étudiant en Bac 3 Génie Informatique à l'Université de Lubumbashi, spécialisé en IA, bases de données et innovation technologique.
 
-## 🚀 Pages
+## Pages
 
 | Page | Description |
 |------|-------------|
@@ -11,7 +11,7 @@ Portfolio professionnel de **Josué Musombokelwa (#la-mus)**, étudiant en Bac 3
 | `services.html` | Services — IA, BD vectorielles, conseil, web |
 | `contact.html` | Contact — Formulaire et informations directes |
 
-## 🛠️ Compétences clés (2026)
+##Compétences clés (2026)
 
 ### Intelligence Artificielle
 - Machine Learning, Deep Learning, Vision par ordinateur (CNN)
@@ -26,12 +26,12 @@ Portfolio professionnel de **Josué Musombokelwa (#la-mus)**, étudiant en Bac 3
 - HTML5, CSS3, JavaScript, Responsive Design, UI/UX
 - Python, Node.js, API REST, Automatisation
 
-## 🎨 Design 2026
+##Design 2026
 - Palette : fond sombre (`#06060f`) + accent violet/indigo (`#a78bfa`, `#7c3aed`) + cyan (`#38bdf8`)
 - Typographies : Inter + Outfit
 - Chatbot IA intégré mis à jour
 
-## 📬 Contact
+## Contact
 - **Email** : musjosue809@gmail.com
 - **WhatsApp** : +243 846 066 283
 - **Localisation** : Lubumbashi, RDC
